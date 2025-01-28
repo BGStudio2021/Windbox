@@ -10,6 +10,12 @@
     font-family: 'Arial', sans-serif;
 }
 
+/* 图标字体 */
+@font-face {
+    font-family: seguisym;
+    src: url('seguisym.ttf');
+}
+
 /* 页面背景与边距 */
 body {
     margin: 0;
@@ -158,6 +164,7 @@ body {
     width: 40px;
     height: 36px;
     text-align: center;
+    font-family: seguisym !important;
 }
 
 .windbox-action-normal {
