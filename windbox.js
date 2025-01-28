@@ -663,7 +663,7 @@ function listenNetworkChange() {
 // 显示欢迎消息
 function showWelcomeMsg() {
     if (!localStorage.welcomed) {
-        notification_show("欢迎使用 Windbox", "点击此通知以了解有关 Windbox 的更多信息。", 10000, function () {
+        notification_show("欢迎使用 Windbox", "点击此通知以了解有关 Windbox 的更多信息。<br><br>此项目绝不附属于 Microsoft，且不应与 Microsoft 的产品相混淆，这也不是 Windows 365 Cloud PC。", 10000, function () {
             windbox_generate("Applications/Welcome/index.html?ver=1", "favicon.png", "欢迎 - Windbox", "#1565C0", "#ffffff");
             localStorage.setItem("welcomed", true);
         });
@@ -759,6 +759,12 @@ defaultShortcuts = [{
     URL: "Applications/Welcome/index.html?ver=1",
     icon: "favicon.png",
     title: "欢迎",
+    background: "#1565C0",
+    color: "#ffffff"
+}, {
+    URL: "Applications/Blessing-2025/index.html?ver=1",
+    icon: "favicon.png",
+    title: "新年祝福语",
     background: "#1565C0",
     color: "#ffffff"
 }];
